@@ -13,7 +13,7 @@
   <body>
     <script type="text/javascript" src="./main.js"></script>
 
-    <form class="form1" action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    <form class="form1 new-form" action="https://mate-academy-form-lesson.herokuapp.com/create-application"
     method="post" onsubmit="onSubmit()">
       <fieldset>
         <legend>Personal information</legend>
@@ -70,7 +70,7 @@
     </form>
 
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="post" onsubmit="onSubmit()">
+    method="post" class="new-form" onsubmit="onSubmit()">
       <fieldset>
         <legend>Registration</legend>
 
@@ -102,7 +102,7 @@
     </form>
 
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="post" onsubmit="onSubmit()">
+    method="post" class="new-form" onsubmit="onSubmit()">
       <fieldset>
         <legend>An interesting fact about you!</legend>
         <div class="form-field cats">
@@ -110,16 +110,17 @@
           <input
             type="radio"
             name="cats"
-            id="love-cats"
+            id="yes"
             value="yes"
           >
-          Yes
+          <label for="yes">Yes</label>
           <input
             type="radio"
             name="cats"
             value="no"
+            id="no"
           >
-          No
+          <label for="no">No</label>
         </div>
 
         <div class="form-field color">
@@ -167,7 +168,7 @@
     </form>
 
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="post" onsubmit="onSubmit()">
+    method="post" class="new-form" onsubmit="onSubmit()">
       <fieldset>
         <legend>Additional info:</legend>
         <div class="form-field comments">
